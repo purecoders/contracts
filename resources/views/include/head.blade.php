@@ -10,11 +10,11 @@
   <!-- Scripts -->
 
   <script src="{{ asset('js/app.js') }}" defer></script>
-  <script src="{{ asset('js/bootstrap.js') }}" defer></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
   <script src="{{ asset('js/jquery.min.js') }}" defer></script>
   <script src="{{ asset('js/persian-date.min.js') }}" defer></script>
   <script src="{{ asset('js/persian-datepicker.min.js') }}" defer></script>
-  <script src="{{ asset('js/main.js') }}" defer></script>
+  <script src="{{ asset('js/main.min.js') }}" defer></script>
 
   <!-- Fonts -->
   {{--<link rel="dns-prefetch" href="//fonts.gstatic.com">--}}
@@ -25,5 +25,5 @@
   <link rel="stylesheet" href="{{asset('css/persian-datepicker.min.css')}}">
   <link rel="stylesheet" href="{{asset('css/bootstrap-rtl.min.css')}}">
   <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
-  <link rel="stylesheet" href="{{asset('css/style.css')}}">
+  <link rel="stylesheet" href="{{asset('css/style.min.css')}}">
 </head>

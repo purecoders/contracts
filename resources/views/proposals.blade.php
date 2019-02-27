@@ -48,10 +48,15 @@
 
         </div>
         <div class="row">
-          <label class="col-md-2 col-form-label  " for="documents">اسناد</label>
+          <label class="col-md-2 col-form-label  " for="documents">سند</label>
           <div class="col-md-3">
-            <input type="file" id="documents" required=""
-                   class=" form-control-file">
+            <div id="fileInputsContainer" class="d-flex flex-column">
+              <div class="d-flex">
+                <input type="file" id="documents" required=""
+                       class="form-control-file" name="documents[]">
+                <button class="btn btn-sm btn-light" onclick="addDocumentInput()">سند جدید</button>
+              </div>
+            </div>
           </div>
         </div>
 
