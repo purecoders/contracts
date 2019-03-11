@@ -46,7 +46,18 @@
                    class="form-control" name="project_executives">
           </div>
         </div>
-
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="amount">مبلغ طرح (ریال) </label>
+          <div class="col-md-3">
+            <input type="text" id="amount" required=""
+                   class="form-control" name="amount">
+          </div>
+          <label class="col-md-2 text-right  col-form-label" for="colleges">همکاران طرح</label>
+          <div class="col-md-3">
+            <input type="text" id="colleges"
+                   class="form-control" name="colleges">
+          </div>
+        </div>
         <div class="form-group row">
           <label class="col-md-2 col-form-label" for="college">دانشکده مربوطه</label>
           <div class="col-md-3">
@@ -92,10 +103,11 @@
 
         </div>
         <div class="form-group row">
-          <label class="col-md-2 col-form-label" for="amount">مبلغ طرح </label>
+
+          <label class="col-md-2  col-form-label" for="status"> وضعیت طرح</label>
           <div class="col-md-3">
-            <input type="text" id="amount" required=""
-                   class="form-control" name="amount">
+            <input type="text" id="status" required=""
+                   class="form-control" name="status">
           </div>
 
         </div>
@@ -153,13 +165,16 @@
             <th>تاریخ خاتمه قرارداد</th>
             <th>مشارکتی/انفرادی</th>
             <th>مبلغ طرح</th>
-            <th>ویرایش</th>
+            <th>وضعیت طرح</th>
+            <th>مشاهده</th>
           </tr>
           </thead>
           <tbody class=" text-center">
-          <tr>
+          <tr class="status-is-finishing">
             <th scope="row">1</th>
-            <td>پیاده سازی نرم افزار کلود</td>
+            <td>
+              <a href="{{route('contract')}}">پیاده سازی نرم افزار کلود</a>
+            </td>
             <td>98668</td>
             <td>154894</td>
             <td>سازمانی</td>
@@ -172,8 +187,51 @@
             <td>98/12/25</td>
             <td>انفرادی</td>
             <td>45،000،000</td>
+            <td>در حال انجام</td>
             <td>
-              <a href="{{route('contract')}}" class="btn btn-light">ویرایش</a>
+              <a href="{{route('contract')}}" class="btn btn-light">مشاهده</a>
+            </td>
+
+          </tr>
+          <tr class="">
+            <th scope="row">1</th>
+            <td><a href="{{route('contract')}}">پیاده سازی نرم افزار کلود</a></td>
+            <td>98668</td>
+            <td>154894</td>
+            <td>سازمانی</td>
+            <td>بویر</td>
+            <td>عباسی مهر</td>
+            <td>فناوری اطلاعات</td>
+            <td>نرم افزار</td>
+            <td>97/12/25</td>
+            <td>یک سال</td>
+            <td>98/12/25</td>
+            <td>انفرادی</td>
+            <td>45،000،000</td>
+            <td>در حال انجام</td>
+            <td>
+              <a href="{{route('contract')}}" class="btn btn-light">مشاهده</a>
+            </td>
+
+          </tr>
+          <tr class="status-finished">
+            <th scope="row">1</th>
+            <td ><a class="text-dark" href="{{route('contract')}}">پیاده سازی نرم افزار کلود</a></td>
+            <td>98668</td>
+            <td>154894</td>
+            <td>سازمانی</td>
+            <td>بویر</td>
+            <td>عباسی مهر</td>
+            <td>فناوری اطلاعات</td>
+            <td>نرم افزار</td>
+            <td>97/12/25</td>
+            <td>یک سال</td>
+            <td>98/12/25</td>
+            <td>انفرادی</td>
+            <td>45،000،000</td>
+            <td>در حال انجام</td>
+            <td>
+              <a href="{{route('contract')}}" class="btn btn-light">مشاهده</a>
             </td>
 
           </tr>

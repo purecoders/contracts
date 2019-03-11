@@ -48,6 +48,18 @@
           </div>
         </div>
         <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="amount">مبلغ طرح (ریال) </label>
+          <div class="col-md-3">
+            <input type="text" id="amount" required=""
+                   class="form-control" name="amount">
+          </div>
+          <label class="col-md-2 text-right  col-form-label" for="colleges">همکاران طرح</label>
+          <div class="col-md-3">
+            <input type="text" id="colleges"
+                   class="form-control" name="colleges">
+          </div>
+        </div>
+        <div class="form-group row">
           <label class="col-md-2 col-form-label" for="college">دانشکده مربوطه</label>
           <div class="col-md-3">
             <input type="text" id="college" required=""
@@ -92,12 +104,11 @@
 
         </div>
         <div class="form-group row">
-          <label class="col-md-2 col-form-label" for="amount">مبلغ طرح </label>
+          <label class="col-md-2 col-form-label" for="status"> وضعیت طرح</label>
           <div class="col-md-3">
-            <input type="text" id="amount" required=""
-                   class="form-control" name="amount">
+            <input type="text" id="status" required=""
+                   class="form-control" name="status">
           </div>
-
         </div>
         <div class="row">
           <label class="col-md-2 col-form-label  " for="documents">اسناد</label>
@@ -212,11 +223,11 @@
             <th>تاریخ خاتمه قرارداد</th>
             <th>مشارکتی/انفرادی</th>
             <th>مبلغ طرح</th>
-            <th>اسناد</th>
+            <th>وضعیت</th>
           </tr>
           </thead>
           <tbody class=" text-center">
-          <tr>
+          <tr class="status-finished">
             <th scope="row">1</th>
             <td>پیاده سازی نرم افزار کلود</td>
             <td>98668</td>
@@ -232,7 +243,7 @@
             <td>انفرادی</td>
             <td>45،000،000</td>
             <td>
-              <a href="#" class="btn btn-light  ">بارگیری <i class="fal fa-download"></i></a>
+              در حال اجرا
             </td>
           </tr>
 

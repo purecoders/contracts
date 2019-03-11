@@ -25,5 +25,5 @@
   <link rel="stylesheet" href="{{asset('css/persian-datepicker.min.css')}}">
   <link rel="stylesheet" href="{{asset('css/bootstrap-rtl.min.css')}}">
   <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
-  <link rel="stylesheet" href="{{asset('css/style.min.css')}}">
+  <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
