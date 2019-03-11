@@ -14,7 +14,7 @@
   <script src="{{ asset('js/jquery.min.js') }}" defer></script>
   <script src="{{ asset('js/persian-date.min.js') }}" defer></script>
   <script src="{{ asset('js/persian-datepicker.min.js') }}" defer></script>
-  <script src="{{ asset('js/main.min.js') }}" defer></script>
+  <script src="{{ asset('js/main.js') }}" defer></script>
 
   <!-- Fonts -->
   {{--<link rel="dns-prefetch" href="//fonts.gstatic.com">--}}

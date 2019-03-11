@@ -23,6 +23,9 @@
             <a class="nav-link" href="{{ route('report') }}">گزارش گیری</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ route('visits') }}">بازید ها</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ route('proposals') }}">پورپوزال ها</a>
           </li>
           <li class="nav-item">

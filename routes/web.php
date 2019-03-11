@@ -50,3 +50,11 @@ Route::get('contracts',function (){
 Route::get('contract',function (){
   return view('contract');
 })->name('contract');
+
+Route::get('visits',function (){
+  return view('visits');
+})->name('visits');
+
+Route::get('visit',function (){
+  return view('visit');
+})->name('visit');
