@@ -18,11 +18,29 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-2 col-form-label " for="date">تاریخ ارایه </label>
+          <label class="col-md-2 col-form-label " for="date">تاریخ عقد </label>
           <div class="col-md-3">
             <input type="text" id="date" required=""
                    class="form-control j-date"
                    name="start_day">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="organization">سازمان طرف قرارداد تفاهم نامه</label>
+          <div class="col-md-3">
+            <select name="organization" class="form-control">
+              <option value=""></option>
+              <option value="">خصوصی</option>
+              <option value="">دولتی ملی</option>
+              <option value="">بین المللی</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="number">شماره تفاهم نامه</label>
+          <div class="col-md-3">
+            <input type="number" id="number"
+                   class="form-control" name="number">
           </div>
         </div>
         <div class="row">
@@ -62,12 +80,14 @@
       <h5 class="py-2 ">تفاهم نامه ها :</h5>
       <div class="table-responsive">
         <table id="تفاهم نامه ها" class="table table-striped table-bordered ">
-          <thead class="text-center   ">
-          <tr>
-            <th>ردیف</th>
-            <th>موضوع</th>
-            <th>ناریخ ارایه</th>
-            <th>ویرایش</th>
+          <thead class="text-center">
+          <tr >
+            <th class="text-center">ردیف</th>
+            <th class="text-center">موضوع</th>
+            <th class="text-center">ناریخ عقد</th>
+            <th class="text-center">سازمان طرف قرارداد تفاهم نامه</th>
+            <th class="text-center">شماره تفاهم نامه</th>
+            <th class="text-center">مشاهده</th>
 
           </tr>
           </thead>
@@ -76,8 +96,10 @@
             <th scope="row">1</th>
             <td>تفاهم نامه یکم</td>
             <td>1397/4/15</td>
+            <td>خصوصی</td>
+            <td>56461646</td>
             <td>
-              <a href="{{route('memorandum')}}" class="btn btn-light">ویرایش</a>
+              <a href="{{route('memorandum')}}" class="btn btn-light">مشاهده</a>
             </td>
 
           </tr>
@@ -85,8 +107,10 @@
             <th scope="row">1</th>
             <td>تفاهم نامه دوم</td>
             <td>1397/4/15</td>
+            <td>خصوصی</td>
+            <td>56461646</td>
             <td>
-              <a href="{{route('memorandum')}}" class="btn btn-light">ویرایش</a>
+              <a href="{{route('memorandum')}}" class="btn btn-light">مشاهده</a>
             </td>
 
           </tr>
@@ -94,8 +118,10 @@
             <th scope="row">1</th>
             <td>تفاهم نامه سوم</td>
             <td>1385/4/05</td>
+            <td>خصوصی</td>
+            <td>56461646</td>
             <td>
-              <a href="{{route('memorandum')}}" class="btn btn-light">ویرایش</a>
+              <a href="{{route('memorandum')}}" class="btn btn-light">مشاهده</a>
             </td>
 
           </tr>

@@ -24,11 +24,29 @@
             </div>
 
             <div class="form-group row">
-              <label class="col-md-2 col-form-label " for="date">تاریخ ارایه </label>
+              <label class="col-md-2 col-form-label " for="date">تاریخ عقد </label>
               <div class="col-md-6">
                 <input type="text" id="date" required=""
                        class="form-control j-date"
                        name="start_day">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-form-label" for="organization">سازمان طرف قرارداد تفاهم نامه</label>
+              <div class="col-md-6">
+                <select name="organization" class="form-control">
+                  <option value=""></option>
+                  <option value="">خصوصی</option>
+                  <option value="">دولتی ملی</option>
+                  <option value="">بین المللی</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-form-label" for="number">شماره تفاهم نامه</label>
+              <div class="col-md-6">
+                <input type="number" id="number"
+                       class="form-control" name="number">
               </div>
             </div>
             <div class="row">
@@ -120,9 +138,12 @@
         <table class="table table-striped table-bordered ">
           <thead class="text-center   ">
           <tr>
-            <th>ردیف</th>
-            <th>موضوع</th>
-            <th>ناریخ ارایه</th>
+            <th class="text-center">ردیف</th>
+            <th class="text-center">موضوع</th>
+            <th class="text-center">ناریخ عقد</th>
+            <th class="text-center">سازمان طرف قرارداد تفاهم نامه</th>
+            <th class="text-center">شماره تفاهم نامه</th>
+
           </tr>
           </thead>
           <tbody class=" text-center">
@@ -130,6 +151,8 @@
             <th scope="row">1</th>
             <td>تفاهم نامه نمونه</td>
             <td>1385/15/04</td>
+            <td>خصوصی</td>
+            <td>56461646</td>
           </tr>
           </tbody>
         </table>
