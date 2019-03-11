@@ -55,6 +55,32 @@
               </div>
 
             </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-form-label" for="isBecomeContract">منجر به عقد قرارداد شده است؟</label>
+              <div class="col-md-4">
+                <select name="isBecomeContract" id="isBecomeContract" class="form-control">
+                  <option value="0">بلی</option>
+                  <option value="1">خیر</option>
+                </select>
+
+              </div>
+              <label class="col-md-2 text-right  col-form-label  " for="type">پروپوزال</label>
+              <div class="col-md-4">
+                <select name="type" id="type" class="form-control">
+                  <option value=""></option>
+                  <option value="">پایان نامه</option>
+                  <option value="">طرح</option>
+                </select>
+
+              </div>
+
+            </div>
+            <div class="form-group row">
+              <label class="col-md-2 col-form-label" for="colleges">همکاران پروپوزال</label>
+              <div class="col-md-4">
+                <textarea name="colleges" id="colleges"  rows="2" class="form-control"></textarea>
+              </div>
+            </div>
             <div class="row">
               <label class="col-md-2 col-form-label  " for="documents">سند</label>
               <div class="col-md-4">
@@ -148,14 +174,16 @@
         <table class="table table-striped table-bordered ">
           <thead class="text-center   ">
           <tr>
-            <th>ردیف</th>
-            <th>نام و نام خانوادگی</th>
-            <th>ناریخ ارایه</th>
-            <th>دانشکده مربوطه</th>
-            <th>گروه مربوطه</th>
-            <th>سازمان هدف</th>
-            <th>عنوان پروپوزال</th>
-
+            <th class="text-center">ردیف</th>
+            <th class="text-center">مجری</th>
+            <th class="text-center">تاریخ ارائه</th>
+            <th class="text-center">دانشکده مربوطه</th>
+            <th class="text-center">گروه مربوطه</th>
+            <th class="text-center">سازمان هدف</th>
+            <th class="text-center">عنوان پروپوزال</th>
+            <th class="text-center">منجر به عقد قرارداد</th>
+            <th class="text-center">پروپوزال</th>
+            <th class="text-center">همکاران پروپوزال</th>
           </tr>
           </thead>
           <tbody class=" text-center">
@@ -169,6 +197,9 @@
             <td>
               پروپوزال اول
             </td>
+            <td>بلی</td>
+            <td>طرح</td>
+            <td>همکار اول </td>
           </tr>
           </tbody>
         </table>

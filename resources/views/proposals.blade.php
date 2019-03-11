@@ -9,7 +9,7 @@
       <h5 class="mt-1 mb-3">پروپوزال جدید</h5>
       <form action="" method="post">
         <div class="form-group row">
-          <label class="col-md-2 col-form-label" for="fullName">نام و نام خانوادگی</label>
+          <label class="col-md-2 col-form-label" for="fullName">مجری</label>
           <div class="col-md-3">
             <input type="text" id="fullName" required=""
                    class="form-control" name="title">
@@ -22,7 +22,7 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-2 col-form-label " for="date">تاریخ ارایه </label>
+          <label class="col-md-2 col-form-label " for="date">تاریخ ارائه </label>
           <div class="col-md-3">
             <input type="text" id="date" required=""
                    class="form-control j-date"
@@ -46,6 +46,32 @@
                    class="form-control start-day pwt-datepicker-input-element" name="">
           </div>
 
+        </div>
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="isBecomeContract">منجر به عقد قرارداد شده است؟</label>
+          <div class="col-md-3">
+            <select name="isBecomeContract" id="isBecomeContract" class="form-control">
+              <option value="0">بلی</option>
+              <option value="1">خیر</option>
+            </select>
+
+          </div>
+          <label class="col-md-2 text-right  col-form-label  " for="type">پروپوزال</label>
+          <div class="col-md-3">
+            <select name="type" id="type" class="form-control">
+              <option value=""></option>
+              <option value="">پایان نامه</option>
+              <option value="">طرح</option>
+            </select>
+
+          </div>
+
+        </div>
+        <div class="form-group row">
+          <label class="col-md-2 col-form-label" for="colleges">همکاران پروپوزال</label>
+          <div class="col-md-3">
+            <textarea name="colleges" id="colleges"  rows="2" class="form-control"></textarea>
+          </div>
         </div>
         <div class="row">
           <label class="col-md-2 col-form-label  " for="documents">سند</label>
@@ -77,7 +103,7 @@
     <h4 class="my-3">همه پروپوزال ها</h4>
     <div class="container-fluid mt- mb-5 p-3 bg-white border-round">
       <div class="d-flex">
-        <button  class="btn btn-app ml-auto" onclick="excelReport(this)">
+        <button class="btn btn-app ml-auto" onclick="excelReport(this)">
           <i class="fal fa-file-excel"></i>
           دریافت خروجی
         </button>
@@ -87,14 +113,17 @@
         <table id="پروپوزال ها" class="table table-striped table-bordered ">
           <thead class="text-center   ">
           <tr>
-            <th>ردیف</th>
-            <th>نام و نام خانوادگی</th>
-            <th>ناریخ ارایه</th>
-            <th>دانشکده مربوطه</th>
-            <th>گروه مربوطه</th>
-            <th>سازمان هدف</th>
-            <th>عنوان پروپوزال</th>
-            <th>ویرایش</th>
+            <th class="text-center">ردیف</th>
+            <th class="text-center">مجری</th>
+            <th class="text-center">تاریخ ارائه</th>
+            <th class="text-center">دانشکده مربوطه</th>
+            <th class="text-center">گروه مربوطه</th>
+            <th class="text-center">سازمان هدف</th>
+            <th class="text-center">عنوان پروپوزال</th>
+            <th class="text-center">منجر به عقد قرارداد</th>
+            <th class="text-center">پروپوزال</th>
+            <th class="text-center">همکاران پروپوزال</th>
+            <th class="text-center">مشاهده</th>
 
           </tr>
           </thead>
@@ -109,8 +138,11 @@
             <td>
               پروپوزال اول
             </td>
+            <td>بلی</td>
+            <td>طرح</td>
+            <td>همکار اول </td>
             <td>
-              <a href="{{route('proposal')}}" class="btn btn-light">ویرایش</a>
+              <a href="{{route('proposal')}}" class="btn btn-light">مشاهده</a>
             </td>
 
           </tr>
@@ -124,8 +156,11 @@
             <td>
               پروپوزال اول
             </td>
+            <td>خیر</td>
+            <td>پایان نامه</td>
+            <td>همکار اول </td>
             <td>
-              <a href="{{route('proposal')}}" class="btn btn-light">ویرایش</a>
+              <a href="{{route('proposal')}}" class="btn btn-light">مشاهده</a>
             </td>
 
           </tr>
