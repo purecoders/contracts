@@ -75,8 +75,8 @@
             <div class="row">
               <div class="col-md-2 ">
                 <button class="my-2 btn  btn-app" type="submit">
-                  <i class="fal fa-plus mr-1"></i>
-                  ثبت بازدید
+                  <i class="fal fa-edit mr-1"></i>
+                  ویرایش
                 </button>
               </div>
             </div>
